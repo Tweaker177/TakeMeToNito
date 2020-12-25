@@ -1,9 +1,10 @@
 Package: com.i0stweak3r.takemetonito
 Name: TakeMeToNito
 Depends: mobilesubstrate, com.nito.tvcontrolcenter, firmware (>=13.0)
-Version: 1.0
+Version: 1.0.0
 Architecture: appletvos-arm64
-Description: A control center module to quickly open NitoTV package manager. Built for use with TVControlCenter on tvOS. Works on tvOS 13-14.x Parts of the code are based on the example project checkra1n on lechium's GitHub. Not too much different in this project so most development credit goes to him, and iKilledAppl3
-Maintainer: i0stweak3r
-Author: i0stweak3r
+Description: A control center module to quickly open NitoTV package manager. Built for use with TVControlCenter on tvOS. Works on tvOS 13-14.x Parts of the code are based on the example project checkra1n on lechium's GitHub. 
+Not too much different in this project so most development credit goes to him, and iKilledAppl3 for answering my noob questions. 
+Maintainer: i0stweak3r <djvs23@gmail.com>
+Author: i0stweak3r <djvs23@gmail.com>
 Section: Control Center
