@@ -1,5 +1,7 @@
 ARCHS = arm64
 TARGET = appletv:clang
+FINALPACKAGE = 1
+GO_EASY_ON_ME = 1
 
 SYSROOT = $(THEOS)/sdks/AppleTVOS12.4.sdk
 THEOS_DEVICE_IP = 192.168.x.xxx
@@ -8,13 +10,12 @@ INSTALL_TARGET_PROCESSES = TVSystemMenuService
 include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = TakeMeToNito
-
-TakeMeToNito_FILES =  TMTNitoModule.m
-TakeMeToNito_INSTALL_PATH = /Library/TVSystemMenuModules
-TakeMeToNito_FRAMEWORKS = UIKit Foundation CoreFoundation CoreServices
-TakeMeToNito_PRIVATE_FRAMEWORKS = TVSystemMenuUI PineBoardServices
-TakeMeToNito_CFLAGS = -fobjc-arc  -F. -I.
-TakeMeToNito_LDFLAGS +=  -F. -I.
+$(BUNDLE_NAME)_FILES =  TMTNitoModule.m
+$(BUNDLE_NAME)_INSTALL_PATH = /Library/TVSystemMenuModules
+$(BUNDLE_NAME)_FRAMEWORKS = UIKit Foundation CoreFoundation CoreServices
+$(BUNDLE_NAME)_PRIVATE_FRAMEWORKS = TVSystemMenuUI PineBoardServices
+$(BUNDLE_NAME)_CFLAGS = -fobjc-arc  -F. -I.
+$(BUNDLE_NAME)_LDFLAGS +=  -F. -I.
 
 include $(THEOS_MAKE_PATH)/bundle.mk
 
